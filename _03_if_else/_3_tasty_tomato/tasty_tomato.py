@@ -1,5 +1,6 @@
-from tkinter import *
+from tkinter import messagebox, simpledialog, Tk
 import tkinter as tk
+
 
 window_width = 600
 window_height = 600
@@ -11,7 +12,7 @@ canvas.grid()
 
 # 1. Ask the user what color tomato they would like and save their response
 #    You can give them up to three choices
-
+color = simpledialog.askstring(title= " ", prompt= "What color would you like your tomato to be.")
 
 # 2. Use if-else statements to draw the tomato in the color that they chose
 #    You can modify the code below or draw your own tomato
