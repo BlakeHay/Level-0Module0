@@ -5,15 +5,16 @@
 """
 from tkinter import messagebox, simpledialog, Tk
 
-def adder(self, number1, number2):
+def adder( number1, number2):
     return number1 + number2
 
 if __name__ == '__main__':
     window = Tk()
     window.withdraw()
-    x = simpledialog.askinteger(title= " ", prompt= "choose a random number.")
-    y = simpledialog.askinteger(title= " ", prompt= "choose another random number.")
-
+    x = simpledialog.askinteger(title= " ", prompt= "Choose a random number.")
+    y = simpledialog.askinteger(title= " ", prompt= "Choose another random number.")
+    num = adder(x,y)
+    messagebox.showinfo(message= "The sum is " + str(num)+ ".")
 
 
 
